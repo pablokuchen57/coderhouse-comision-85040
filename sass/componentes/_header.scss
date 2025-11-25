@@ -1,0 +1,187 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.header {
+  background-color: $color-negro;
+  width: 100%;
+}
+
+.custom-nav {
+  padding: 0.8rem 2rem;
+  background-color: $color-negro;
+  width: 60%;
+  
+  @media (min-width: 992px) {
+    justify-content: space-between;
+  }
+}
+
+.logo_img{ width: 220px; } 
+.logo_img_container{ width: 212px; }
+
+.redes_nav_container, .redes_nav_container_mobile_bar {
+    gap: 10px;
+    width: 109px;
+    a {
+        color: $color-blanco;
+        font-size: 18px; 
+        margin: 0 5px;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+}
+
+.ul-nav-container{
+    width: 727px;
+}
+
+.ul_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+  
+  .nav-item {
+    padding: 0;
+  }
+
+  .nav-link {
+    color: $color-blanco;
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.5rem;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.75;
+      background-color: transparent;
+    }
+  }
+}
+
+
+.boton_menu {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.icono_menu {
+  font-size: 30px;
+  color: $color-blanco;
+}
+@media (max-width: 1650px) {
+    .custom-nav{
+        width: 80%;
+    }
+}
+@media (max-width: 1232px) {
+    .custom-nav{
+        width: 100%;
+    }
+}
+@media (max-width: 991.98px) {
+  .custom-nav {
+    justify-content: space-between;
+    
+    .logo_img_container {
+        flex-grow: 1;
+        text-align: center;
+        width: 40%;
+    }
+    
+    .redes_nav_container_mobile_bar {
+        width: 20%;
+    }
+    .boton_menu{
+        width: 20%;
+    }
+  }
+  
+  .logo_img {
+    width: 200px;
+  }
+
+  #mainNav {
+    background-color: #f7f7f7; 
+    flex-basis: 100%;
+    width: auto;
+    margin-left: -2rem; 
+    margin-right: -2rem;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .ul_nav {
+    flex-direction: column;
+    gap: 0;
+    
+    .nav-item {
+      width: 100%;
+    }
+    
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 80px; 
+      padding: 25px 0;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      background-color: transparent;
+      font-size: 1.3rem;
+      color: $color-negro;
+
+      &:hover {
+        background-color: #eee;
+        text-decoration: none;
+      }
+    }
+  }
+   #mainNav {
+    position: absolute;
+    top: 100%;       
+    left: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    z-index: 9999;
+
+    margin: 0;       
+    padding: 0;  
+  }
+
+  .custom-nav {
+    position: relative; 
+  }
+}
+@media (max-width: 542px) {
+    .redes_nav_container_mobile_bar{
+        gap: 5px;
+    }
+    .logo_img {
+        width: 150px;
+    }
+}
+@media (max-width: 426px) {
+    .redes_nav_container_mobile_bar{
+        a{
+            display: none;
+        }
+    }
+    .logo_img_container {
+        padding-right: 40px;
+    }
+    .boton_menu{
+        padding-left: 20px;
+    }
+}

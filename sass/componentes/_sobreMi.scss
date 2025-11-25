@@ -1,0 +1,122 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.main_sobreMi {
+  @include center-flex(row);
+  padding: $spacing-lg $spacing-sm;
+
+  @media (max-width: 1410px) {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
+.img_container_sobreMi {
+  width: 50%;
+  @include center-flex;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+  .img_sobreMi {
+    width: 90%;
+    height: auto;
+    min-width: 660px;
+    @media (max-width: 710px) {
+      min-width: 100px;
+  }
+  }
+}
+
+.texto_container_sobreMi {
+  width: 50%;
+  padding-top: 40px;
+  
+
+  @media (max-width: 1410px) {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 50px;
+    margin: 50px 0 30px;
+    font-weight: 100;
+
+    @media (max-width: 1410px) {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  p {
+    width: 80%;
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 30px;
+
+    @media (max-width: 1410px) {
+      width: 100%;
+    }
+  }
+}
+
+.cards_container_sobreMi {
+  width: 80%;
+
+  @media (max-width: 1410px) {
+    width: 100%;
+  }
+}
+
+.contact_cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .card_contact {
+    width: 180px;
+    padding: 15px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    
+    @media (max-width: 436px) {
+      width: 70%;
+  }
+
+    i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: .8;
+      margin-bottom: 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    &:hover {
+      border-color: white;
+      transform: translateY(-3px);
+    }
+  }
+}
+

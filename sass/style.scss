@@ -1,4 +1,13 @@
-@use "dj";
-@use "eventos";
-@use "galeria";
-@use "nosotros";
+// Base
+@use './base/variables' as *;
+@use './base/mixins' as *;
+
+// Componentes
+@use './componentes/html';
+@use './componentes/header';
+@use './componentes/footer';
+@use './componentes/dj';
+@use './componentes/eventos';
+@use './componentes/galeria';
+@use './componentes/index';
+@use './componentes/sobreMi';

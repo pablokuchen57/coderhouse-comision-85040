@@ -1,0 +1,123 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.main-register {
+  @include center-flex(column);
+  padding: $spacing-xl 0;
+}
+
+.form-register {
+  @include center-flex(column, $spacing-md);
+  background-color: $color-negro;
+  color: $color-blanco;
+  padding: $spacing-lg $spacing-md;
+  max-width: 600px;
+  border-radius: $radius;
+  text-align: center;
+  box-shadow: $shadow-strong;
+  @media (max-width: 600px) {
+      border-radius: 0;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: $spacing-md;
+    font-family: $font-secondary;
+    @media (max-width: 492px) {
+            font-size: 16px;;
+        }
+  }
+}
+
+.inputs-row {
+  gap: 30px;
+
+  .input-group {
+    flex: 1;
+    margin-bottom: $spacing-sm;
+    min-width: 201px; 
+    max-width: 240px;
+    padding: 0;
+    @media (max-width: 492px) {
+      justify-content: center;
+  }
+
+    label {
+      font-size: 15px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input {
+      @include input-base;
+      width: 100%;
+      @media (max-width: 492px) {
+            text-align: center;;
+        }
+    }
+  }
+}
+
+.input-full {
+  width: 100%;
+
+  .input-wrapper {
+    width: 60%;
+    min-width: 201px; 
+    max-width: 240px;
+
+    label {
+      font-size: 15px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input {
+      @include input-base;
+      width: 100%;
+      @media (max-width: 492px) {
+            text-align: center;;
+        }
+    }
+  }
+}
+
+.btn-register {
+  width: 80%;
+  height: 45px;
+  font-size: 18px;
+  background-color: #ff5500;
+  border: 1px solid #ff5500;
+  color: $color-blanco;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 30px;
+
+  &:hover {
+    background-color: transparent;
+    color: #ff5500;
+  }
+}
+
+.account-link {
+  a {
+    color: $color-blanco;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .input-wrapper {
+    width: 90% !important;
+    max-width: none;
+  }
+
+  .btn-register {
+    width: 100%;
+  }
+}

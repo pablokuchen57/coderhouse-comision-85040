@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+
+.galeria_container {
+  column-count: 3;
+  column-gap: 1px; 
+  background-color: $color-blanco;
+  padding: 1px;  
+}
+
+.galeria_container img {
+  width: 100%;
+  height: 1200px; 
+  object-fit: cover;
+  margin-bottom: 1px;
+  break-inside: avoid;
+  display: block;
+  min-width: 400px;
+}
+
+@media (max-width: 1194px) {
+  .galeria_container {
+    columns: 2;
+  }
+}
+
+@media (max-width: 907px) {
+  .galeria_container {
+    columns: 1;
+  }
+}

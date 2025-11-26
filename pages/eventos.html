@@ -1,69 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Eventos y presentaciones de Pablo Kuchen como DJ. Conocé sus próximas fechas, shows y experiencias en vivo.">
+    <meta name="author" content="Pablo Kuchen">
+    <meta name="keywords" content="DJ, eventos, fiestas, música electrónica, shows en vivo, Pablo Kuchen, presentaciones DJ">
+
+    <meta property="og:title" content="Eventos - DJ Pablo Kuchen">
+    <meta property="og:description" content="Descubrí los eventos, shows y fechas de Pablo Kuchen como DJ.">
+    <meta property="og:image" content="../img/preview-eventos.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="../assets/BLANCO--removebg-preview.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>Pablo Kuchen - Eventos</title>
 </head>
 <body>
-    <H1>Eventos</H1>
-        <header>
-        <a href="../index.html">
-            <img src="../aseets/BLANCO-.jpg" width="50%" alt="logo de pagina">
-        </a>
-        
+    <header class="header bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid custom-nav">
+            <a class="navbar-brand mx-auto mx-lg-0 logo_img_container order-2 order-lg-1" href="../index.html">
+                <img src="../assets/BLANCO-.jpg" alt="logo" class="logo_img">
+            </a>
+            <div class="redes_nav_container d-none d-lg-flex align-items-center me-3 order-lg-3">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+            </div>
+            <div class="redes_nav_container_mobile_bar d-flex d-lg-none align-items-center order-1">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+            </div>
+            <button class="navbar-toggler boton_menu d-lg-none order-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars icono_menu"></i>
+            </button>
+            <div class="ul-nav-container collapse navbar-collapse justify-content-end order-lg-2" id="mainNav">
+                <ul class="navbar-nav ul_nav w-100 w-lg-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./eventos.html">EVENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./galeria.html">GALERIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobreMi.html">SOBRE MI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./dj.html">DJS</a></li>
+                </ul>
 
-        <h1>Pablo Kuchen</h1>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./dj.html">DJS</a>
-                </li>
-                <li>
-                    <a href="./eventos.html">Eventos</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-            </ul>
+            </div>
         </nav>
-
     </header>
 
-    <main>
-        
+    <main class="py-5">
+        <section class="eventos_container container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8 d-flex justify-content-center">
+                    <article class="evento_card card">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="div_img_eventos">
+                                    <img src="../assets/eventos/IMG-20250218-WA0003.jpg" alt="Evento Techno Dior">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="evento_info_container card-body">
+                                    <h2 class="evento_titulo">Techno Dior</h2>
+                                    <p class="evento_datos">
+                                        <span><i class="fa-regular fa-calendar"></i> 22 feb 2026</span>
+                                        <span><i class="fa-regular fa-clock"></i> 22:00</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> Complejo Standby</span>
+                                    </p>
+                                    <div class="lineup">
+                                        <strong>Line-Up:</strong>
+                                        <ul class="djs_eventos_container">
+                                            <li>Kamilo Castaneda – Esteban Alvarez</li>
+                                            <li>Pablo Kuchen – Conra Lazeroni - Eli4n</li>
+                                        </ul>
+                                    </div>
+                                    <p class="evento_descripcion">
+                                        Cinco DJs en vivo para que no pares de bailar ni un segundo. Venite a disfrutar
+                                        una fiesta explosiva.
+                                    </p>
+                                    <div class="evento_botones_container">
+                                        <a class="evento_botones boton_comprar" href="#">Comprar</a>
+                                        <a class="evento_botones boton_verMas" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-8 d-flex justify-content-center">
+                    <article class="evento_card card">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="div_img_eventos">
+                                    <img src="../assets/eventos/IMG-20240825-WA0018.jpg"
+                                        alt="Evento Inauguración Sunset XX Beach">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="evento_info_container card-body">
+                                    <h2 class="evento_titulo">Inauguración Sunset XX Beach</h2>
+                                    <p class="evento_datos">
+                                        <span><i class="fa-regular fa-calendar"></i> 25 mar 2026</span>
+                                        <span><i class="fa-regular fa-clock"></i>16:00</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> Draxxo Beach, Costanera
+                                            Este</span>
+                                    </p>
+                                    <div class="lineup">
+                                        <strong>Line-Up:</strong>
+                                        <ul class="djs_eventos_container">
+                                            <li>Maxi Montejo</li>
+                                            <li>Pablo Kuchen</li>
+                                        </ul>
+                                    </div>
+                                    <p class="evento_descripcion">
+                                        Arrancamos la tarde con la mejor vibra. Venite a disfrutar el atardecer, música
+                                        fresca y un clima increíble para inaugurar la fiesta como se debe.
+                                    </p>
+                                    <div class="evento_botones_container">
+                                        <a class="evento_botones boton_comprar" href="#">Comprar</a>
+                                        <a class="evento_botones boton_verMas" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-8 d-flex justify-content-center">
+                    <article class="evento_card card">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="div_img_eventos">
+                                    <img src="../assets/eventos/IMG-20250904-WA0223.jpg" alt="Evento Monkey">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="evento_info_container card-body">
+                                    <h2 class="evento_titulo">Monkey</h2>
+                                    <p class="evento_datos">
+                                        <span><i class="fa-regular fa-calendar"></i> 5 Sep 2026</span>
+                                        <span><i class="fa-regular fa-clock"></i> 22:00</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> San Martin 2778</span>
+                                    </p>
+                                    <div class="lineup">
+                                        <strong>Line-Up:</strong>
+                                        <ul class="djs_eventos_container">
+                                            <li>Maxi Montejo – Tobias Toledo</li>
+                                            <li>Pablo Kuchen – Nahuel Pezzelatto</li>
+                                        </ul>
+                                    </div>
+                                    <p class="evento_descripcion">
+                                        Prepará la energía porque esta noche se sale con todo. Música al palo, pista
+                                        encendida y un ambiente que no te va a dejar parar. Si buscás activar, este es
+                                        el lugar.
+                                    </p>
+                                    <div class="evento_botones_container">
+                                        <a class="evento_botones boton_comprar" href="#">Comprar</a>
+                                        <a class="evento_botones boton_verMas" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-8 d-flex justify-content-center">
+                    <article class="evento_card card">
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="div_img_eventos">
+                                    <img src="../assets/eventos/IMG-20251021-WA0300.jpg" alt="Evento Open Call">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="evento_info_container card-body">
+                                    <h2 class="evento_titulo">Open Call</h2>
+                                    <p class="evento_datos">
+                                        <span><i class="fa-regular fa-calendar"></i> 14 Nov 2026</span>
+                                        <span><i class="fa-regular fa-clock"></i> 22:00</span>
+                                        <span><i class="fa-solid fa-location-dot"></i> Complejo La Rural</span>
+                                    </p>
+                                    <div class="lineup">
+                                        <strong>Line-Up:</strong>
+                                        <ul class="djs_eventos_container">
+                                            <li>Caledago – Marco Chembarovich</li>
+                                            <li>Pablo Kuchen – Jonatan Lisa</li>
+                                        </ul>
+                                    </div>
+                                    <p class="evento_descripcion">
+                                        Noche para vibrar alto y moverse sin parar. La música sube, las luces explotan y
+                                        la pista se enciende desde el primer beat. Si querés activar, caé y sumate a la
+                                        fiesta.
+                                    </p>
+                                    <div class="evento_botones_container">
+                                        <a class="evento_botones boton_comprar" href="#">Comprar</a>
+                                        <a class="evento_botones boton_verMas" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <h2>Derechos reservados de autor</h2>
-    <h2>Creado por Pablo Kuchen</h2>
-
-    <h3>Redes Sociales</h3>
-    <ul>
-        <li>
-            <a href="https://www.instagram.com/pablokuchen/" a>
-                <img src="../aseets/instagram.jpeg" width="90px" alt="Instagram"></a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/@pablokuchenDJ/videos" a>
-                <img src="../aseets/descarga.jpeg" width="90px" alt="YouTube"></a>
-        </li>
-        <li>
-            <a href="https://soundcloud.com/pablo-kuchen" a>
-                <img src="../aseets/soundclodjpeg.jpeg" width="90px" alt="SoundCloud">
-            </a>
-        </li>
-    </ul>
-
+    <footer class="bg-black text-white py-4">
+        <div class="container">
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                    <h3 class="footer-text mb-1">Derechos reservados de autor</h3>
+                    <h3 class="footer-text">Creado por Pablo Kuchen</h3>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-0 d-flex justify-content-center">
+                    <a href="../index.html">
+                        <img src="../assets/BLANCO-.jpg" alt="logo" class="logo_img_footer img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                    <div class="redes_footer_container d-flex gap-3">
+                        <a href="https://www.youtube.com/@pablokuchen" class="text-white fs-3"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/pablokuchen/" class="text-white fs-3"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://soundcloud.com/pablo-kuchen" class="text-white fs-3"><i
+                                class="fa-brands fa-soundcloud"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
+
 </html>

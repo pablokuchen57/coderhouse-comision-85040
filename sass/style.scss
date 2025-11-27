@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 // Base
 @use './base/variables' as *;
 @use './base/mixins' as *;
 
 // Componentes
+=======
+
+@use './base/variables' as *;
+@use './base/mixins' as *;
+
+>>>>>>> 416fbafdd8136b3049d3e22b5942cd6d8d4961c5
 @use './componentes/html';
 @use './componentes/header';
 @use './componentes/footer';
